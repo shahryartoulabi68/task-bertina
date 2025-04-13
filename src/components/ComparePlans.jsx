@@ -32,7 +32,7 @@ const products = [
 function ComparePlans() {
     const [isShowTable, setIsShowTable] = useState(false)
     return (
-        <div className='flex flex-col items-center justify-between mb-10'>
+        <div className='flex flex-col items-center justify-between mb-4'>
             <button
                 onClick={() => setIsShowTable(!isShowTable)}
                 className='btn bg-violet-500 px-4 py-2 text-secondary-0 mb-10'>{

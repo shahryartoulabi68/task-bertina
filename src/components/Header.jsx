@@ -41,7 +41,7 @@ const liTitle = [
 function Header() {
     return (
         <div>
-            <div className='sticky z-20'>
+            <div className='fixed z-20 bg-white w-full ring-0 top-0 shadow-md'>
                 <nav className=' container  mx-auto flex items-center justify-between px-4'>
                     <div className='flex items-center gap-x-8'>
                         <img src={logo} alt='logo' />
