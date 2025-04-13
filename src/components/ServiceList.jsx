@@ -1,6 +1,8 @@
 import React from 'react'
 import { MdLockOutline } from "react-icons/md";
 import { GrHost } from "react-icons/gr";
+import ServiceItem from '../Ui/ServiceItem';
+import ComparePlans from './ComparePlans';
 
 const sections = [
     {
@@ -47,17 +49,12 @@ function ServiceList() {
             <div className='container'>
                 <h1 className='font-bold text-3xl  mt-8  text-center'>خدمات هاست، دامنه و سرور برتینا</h1>
                 <h2 className='text-center tracking-wide my-6 text-gray-600'>انواع خدمات مرتبط با راه‌اندازی کسب‌وکار اینترنتی و پیش‌نیازهای طراحی سایت</h2>
-                <div className='grid grid-cols-3 gap-10'>
+                <div className='grid grid-cols-3 gap-10 mb-10'>
                     {sections.map((item) => {
-                        return <div key={item.id} className='bg-secondary-0
-                        space-y-4 rounded-xl flex flex-col p-8 items-center shadow-around '>
-                            {item.IconBase}
-                            <h2 className='font-bold text-xl'>{item.title}</h2>
-                            <p className='tracking-wide text-center'>{item.description}</p>
-                            <button className='btn bg-violet-500 px-4 py-2 text-secondary-0'>مشاهده پلن ها</button>
-                        </div>
+                        return <ServiceItem key={item.id} item={item} />
                     })}
                 </div>
+                <ComparePlans />
             </div>
 
         </div>
