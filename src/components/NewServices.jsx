@@ -17,7 +17,7 @@ const service = [
 
 function NewServices() {
     return (
-        <div className='bg-violet-500 h-72'>
+        <div className='bg-violet-500 h-72 mb-8'>
             <div className=' h-full flex items-center container'>
                 <img
                     src={image}
