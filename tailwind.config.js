@@ -50,7 +50,10 @@ export default {
       },
       fontFamily: {
         sans: ["Vazir", ...fontFamily.sans]
-      }
+      },
+      boxShadow: {
+        'around': '0 0 10px rgba(0, 0, 0, 0.2)',
+      },
     },
   },
   plugins: [],
