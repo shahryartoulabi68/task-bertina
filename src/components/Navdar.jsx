@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../public/images/55-55.webp'
-import { BiChevronDown } from 'react-icons/bi'
+import { BiChevronDown, BiMenu } from 'react-icons/bi'
 import { CiChat1 } from "react-icons/ci";
 
 import { BsTelephone } from "react-icons/bs";
@@ -43,9 +43,10 @@ function Navbar() {
         <div className='sticky top-0'>
             <div className='z-20 bg-white w-full  top-10 shadow-md py-4'>
                 <nav className=' container  mx-auto flex items-center justify-between px-4'>
+                    <BiMenu className=' md:hidden w-5 h-5'/>
                     <div className='flex items-center gap-x-8'>
                         <img src={logo} alt='logo' />
-                        <ul className='flex items-center gap-x-4 text-secondary-700'>
+                        <ul className='hidden md:flex items-center gap-x-4 text-secondary-700'>
                             {
                                 liTitle.map((item) => {
                                     return (
@@ -68,12 +69,12 @@ function Navbar() {
 
                         <span className='h-6 border-l-2 border-gray-200 mx-2' />
 
-                        <span className='text-secondary-700'>
+                        <span className='text-secondary-700 hidden md:block'>
                             <EnglishToPersianNumber number="09167123676" />
                         </span>
 
                         <span>
-                            <BsTelephone className='w-5 h-5 text-secondary-700' />
+                            <BsTelephone className='w-6 h-5 text-secondary-700' />
                         </span>
                     </div>
                 </nav>

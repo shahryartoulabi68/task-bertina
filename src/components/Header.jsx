@@ -7,12 +7,12 @@ function Header() {
     return (
         <div>
             <div className='py-2 container flex items-center justify-between'>
-                <div className='flex items-center gap-x-2' >
-                    <span className='font-bold text-violet-400 text-sm bg-violet-200 px-2 py-1 rounded-md'>خبر ویژه</span>
-                    <FaChevronLeft className='w-5 h-5 font-bold text-violet-500' />
-                    <span className='text-sm text-violet-500'>پیش از دیگران سایت جدید برتینا را ببینید...</span>
+                <div className='flex flex-1  justify-center md:justify-start items-center gap-x-2' >
+                    <span className='hidden md:block font-bold text-violet-400 text-sm bg-violet-200 px-2 py-1 rounded-md'>خبر ویژه</span>
+                    <FaChevronLeft className='hidden md:block w-5 h-5 font-bold text-violet-500' />
+                    <span className='text-sm text-violet-500 text-center'>پیش از دیگران سایت جدید برتینا را ببینید...</span>
                 </div>
-                <div className='flex items-center gap-x-4'>
+                <div className='hidden md:flex items-center gap-x-4'>
                     <div className='flex items-center gap-x-1 text-violet-400'>
                         <LiaClipboardListSolid className='w-5 h-5 font-bold ' />
                         <span className=''>وبلاگ</span>

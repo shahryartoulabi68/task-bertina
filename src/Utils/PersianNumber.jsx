@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EnglishToPersianNumber = ({ number }) => {
+function EnglishToPersianNumber  ({ number })  {
   const convertToPersian = (num) => {
     const persianNumbers = '۰۱۲۳۴۵۶۷۸۹';
     return num

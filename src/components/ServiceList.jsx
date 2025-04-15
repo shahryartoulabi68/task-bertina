@@ -49,7 +49,7 @@ function ServiceList() {
             <div className='container'>
                 <h1 className='font-bold text-3xl  mt-8  text-center'>خدمات هاست، دامنه و سرور برتینا</h1>
                 <h2 className='text-center tracking-wide my-6 text-gray-600'>انواع خدمات مرتبط با راه‌اندازی کسب‌وکار اینترنتی و پیش‌نیازهای طراحی سایت</h2>
-                <div className='grid grid-cols-3 gap-10 mb-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10'>
                     {sections.map((item) => {
                         return <ServiceItem key={item.id} item={item} />
                     })}

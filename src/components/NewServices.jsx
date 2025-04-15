@@ -16,8 +16,8 @@ const service = [
 
 function NewServices() {
     return (
-        <div className='bg-violet-500 h-72 mb-8'>
-            <div className=' h-full flex items-center container'>
+        <div className='bg-violet-500 md:h-72 mb-8'>
+            <div className=' h-full flex flex-col md:flex-row items-center container'>
                 <img
                     src='/images/WooCom.webp'
                     alt="WooCom-Image"
@@ -25,7 +25,7 @@ function NewServices() {
                 />
                 <div>
                     <h1 className='font-bold text-3xl text-secondary-0 my-8 text-center'>سرویسهای جدید و تخصصی برتینا</h1>
-                    <div className='flex items-center gap-x-4 '>
+                    <div className='flex flex-col md:flex-row items-center gap-x-4 '>
                         {service.map((item) => {
                             return <div key={item.id} className='rounded-xl text-secondary-0 space-y-2 p-6 mb-8 shadow-around shadow-primary-900'>
                                 <h2 className='text-xl font-bold'>{item.title}</h2>

@@ -46,7 +46,7 @@ function FAQSection() {
 
     return (
         <section className="mb-20">
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center px-4">
                 <h1 className="text-2xl font-bold mb-6">پرسش‌های متداول</h1>
                 {faqs.map((item, index) => (
                   <FaqItem item={item} openIndex={openIndex} toggleItem={toggleItem}/>
