@@ -1,4 +1,3 @@
-import image from '../../public/images/WooCom.webp'
 
 const service = [
     {
@@ -20,7 +19,7 @@ function NewServices() {
         <div className='bg-violet-500 h-72 mb-8'>
             <div className=' h-full flex items-center container'>
                 <img
-                    src={image}
+                    src='/images/WooCom.webp'
                     alt="WooCom-Image"
                     className='object-contain max-h-full max-w-full'
                 />

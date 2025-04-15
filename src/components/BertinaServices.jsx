@@ -1,4 +1,3 @@
-import image from '../../public/images/index-1.webp'
 import { persianNumber } from '../Utils/persianNumber'
 
 const priceDomin = [
@@ -37,7 +36,7 @@ function BertinaServices() {
                     <button className='btn btn--primary whitespace-nowrap '>مشاهده خدمات</button>
                 </div>
                 <div>
-                    <img src={image} alt="image" />
+                    <img src="/images/index-1.webp" alt="image" />
                 </div>
             </div>
             <div className='flex flex-col items-center font-bold justify-center'>
